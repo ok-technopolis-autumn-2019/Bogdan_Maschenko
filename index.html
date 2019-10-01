@@ -5,57 +5,60 @@
     <title>Todo</title>
 </head>
 <body>
-<table class="table-todos" align="center" border="1" width="400" cellpadding="10">
-    <caption>
-        todos
-    </caption>
-    <thead>
-    <tr>
-        <th align="left">
-            <i>
-                Whats needs to be done?
-            </i>
-        </th>
-    </tr>
-    </thead>
-    <tfoot>
-    <tr>
-        <td>
-            3 items left &nbsp;&nbsp;&nbsp;
-            All &nbsp;
-            Active &nbsp;
-            Completed &nbsp;&nbsp;&nbsp;
-            Clear completed
-        </td>
-    </tr>
-    </tr>
-    </tfoot>
-    <tbody>
-    <tr>
-        <td>
-            HTML
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <s>CSS</s>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            JS
-        </td>
-    </tr>
-    <tr>
-        <td>
-            JS tools
-        </td>
-    </tr>
-    <tr>
-        <td>
-        </td>
-    </tr>
-    </tbody>
-</table>
+<div class="main-wrapper">
+    <table class="table-todos" align="center" border="1" width="385" cellpadding="10">
+        <caption class="table-todos_tittle">
+            todos
+        </caption>
+        <thead class="table-todos_main-row">
+        <tr>
+            <th align="left">
+                <i>Whats needs to be done?</i>
+            </th>
+        </tr>
+        </thead>
+        <tfoot class="table-todos_after-table-row">
+        <tr>
+            <td>
+                <span class="after-table-row-text" id="quantity-items">3 items left</span>
+                <input class="after-table-row-input" id="after-table-row-group1" type="button" value="All">
+                <input class="after-table-row-input" id="after-table-row-group2" type="button" value="Active">
+                <input class="after-table-row-input" id="after-table-row-group3" type="button" value="Completed">
+                <span class="after-table-row-text" id="clear-completed">Clear completed</span>
+            </td>
+        </tr>
+        </tfoot>
+        <tbody class="table-todos_base-rows">
+        <tr>
+            <td>
+                <input class="row-input" id="row-group1" type="checkbox">
+                <label for="row-group1">HTML</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="row-input" id="row-group2" type="checkbox">
+                <label for="row-group2">CSS</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="row-input" id="row-group3" type="checkbox">
+                <label for="row-group3">JS</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="row-input" id="row-group4" type="checkbox">
+                <label for="row-group4">JS tools</label>
+            </td>
+        </tr>
+        <tr>
+            <td height="20px">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
