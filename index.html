@@ -1,64 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Todo</title>
-</head>
-<body>
-<div class="main-wrapper">
-    <table class="table-todos" align="center" border="1" width="385" cellpadding="10">
-        <caption class="table-todos_tittle">
-            todos
-        </caption>
-        <thead class="table-todos_main-row">
-        <tr>
-            <th align="left">
-                <i>Whats needs to be done?</i>
-            </th>
-        </tr>
-        </thead>
-        <tfoot class="table-todos_after-table-row">
-        <tr>
-            <td>
-                <span class="after-table-row-text" id="quantity-items">3 items left</span>
-                <input class="after-table-row-input" id="after-table-row-group1" type="button" value="All">
-                <input class="after-table-row-input" id="after-table-row-group2" type="button" value="Active">
-                <input class="after-table-row-input" id="after-table-row-group3" type="button" value="Completed">
-                <span class="after-table-row-text" id="clear-completed">Clear completed</span>
-            </td>
-        </tr>
-        </tfoot>
-        <tbody class="table-todos_base-rows">
-        <tr>
-            <td>
-                <input class="row-input" id="row-group1" type="checkbox">
-                <label for="row-group1">HTML</label>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input class="row-input" id="row-group2" type="checkbox">
-                <label for="row-group2">CSS</label>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input class="row-input" id="row-group3" type="checkbox">
-                <label for="row-group3">JS</label>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input class="row-input" id="row-group4" type="checkbox">
-                <label for="row-group4">JS tools</label>
-            </td>
-        </tr>
-        <tr>
-            <td height="20px">
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Todos</title>
+        <style>
+            .tittle-todos {
+                font-size: 70px;
+            }
+
+            .main-content_entry-section_action_select-all {
+                text-indent: -199px;
+                user-select: none;
+                width: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <header class="main-wrapper_header">
+                <h1 class="tittle-todos">Todos</h1>
+            </header>
+            <main class="main-content">
+                <section class="main-content_entry-section">
+                    <div class="main-content_entry-section_action">
+                        <button
+                                class="main-content_entry-section_action_select-all"
+                                aria-label="Select all tasks">
+                            Select all tasks
+                        </button>
+                        <label>
+                            <input
+                                    class="main-content_entry-section_action_entry-text"
+                                    placeholder="Whats need to be done?"
+                                    type="text"
+                                    aria-label="Whats need to be done?"
+                                    autofocus="autofocus">
+                        </label>
+                    </div>
+                </section>
+                <section class="main-content_main-section">
+                    <div class="main-content_main-section_action-group1">
+                        <label class="main-content_main-section_action-group1_label">
+                            <input
+                                    class="main-content_entry-section_action-group1_checkbox"
+                                    type="checkbox"
+                                    aria-label="HTML">
+                            <span class="main-content_main-section_action-group1_html">HTML</span>
+                            <button
+                                    class="main-content_main-section_action-group1_delete-task"
+                                    aria-label="delete-task">delete task
+                            </button>
+                        </label>
+                    </div>
+                    <div class="main-content_main-section_action-group2">
+                        <label class="main-content_main-section_action-group2_label">
+                            <input
+                                    class="main-content_entry-section_action-group2_checkbox"
+                                    type="checkbox"
+                                    aria-label="CSS">
+                            <span class="main-content_main-section_action-group2_css">CSS</span>
+                            <button
+                                    class="main-content_main-section_action-group2_delete-task"
+                                    aria-label="delete-task">delete task
+                            </button>
+                        </label>
+                    </div>
+                    <div class="main-content_main-section_action-group3">
+                        <label class="main-content_main-section_action-group3_label">
+                            <input
+                                    class="main-content_entry-section_action-group3_checkbox"
+                                    type="checkbox"
+                                    aria-label="JS">
+                            <span class="main-content_main-section_action-group3_js">JS</span>
+                            <button
+                                    class="main-content_main-section_action-group3_delete-task"
+                                    aria-label="delete-task">delete task
+                            </button>
+                        </label>
+                    </div>
+                    <div class="main-content_main-section_action-group4">
+                        <label class="main-content_main-section_action-group4_label">
+                            <input
+                                    class="main-content_entry-section_action-group4_checkbox"
+                                    type="checkbox"
+                                    aria-label="JS tools">
+                            <span class="main-content_main-section_action-group4_js-tools">JS tools</span>
+                            <button class="main-content_main-section_action-group4_delete-task"
+                                    aria-label="delete-task">delete task
+                            </button>
+                        </label>
+                    </div>
+                </section>
+                <section class="main-content_conclusion-bar-section">
+                    <div class="main-content_conclusion-bar">
+                            <span
+                                    class="main-content_conclusion-bar-group_left-component_items"
+                                    aria-label="3 items left">3 items left
+                            </span>
+                        <label class="main-content_conclusion-bar-group_center-component_label">
+                            <input
+                                    class="main-content_conclusion-bar-group_center-component_all-button"
+                                    type="radio"
+                                    aria-label="All">
+                            <span class="main-content_conclusion-bar-group_center-component_active">All</span>
+                        </label>
+                        <label class="main-content_conclusion-bar-group_center-component_label">
+                            <input
+                                    class="main-content_conclusion-bar-group_center-component_active-button"
+                                    type="radio"
+                                    aria-label="active">
+                            <span class="main-content_conclusion-bar-group_center-component_active">Active</span>
+                        </label>
+                        <label class="main-content_conclusion-bar-group_center-component_label">
+                            <input
+                                    class="main-content_conclusion-bar-group_center-component_completed-button"
+                                    type="radio"
+                                    aria-label="Completed">
+                            <span class="main-content_conclusion-bar-group_center-component_completed">Completed</span>
+                        </label>
+                        <button
+                                class="main-content_conclusion-bar-group_right-component_clear-completed-button"
+                                aria-label="Clear completed">
+                            Clear completed
+                        </button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
 </html>
