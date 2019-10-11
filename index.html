@@ -3,17 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Todos</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
         <div class="main-wrapper">
             <header class="main-wrapper__header">
-                <h1 class="tittle-todos">Todos</h1>
+                <h1 class="tittle-todos">todos</h1>
             </header>
             <main class="main-content">
                 <section class="main-content__entry-section main-action">
                     <div class="main-action">
                         <button class="main-action__select-all" aria-label="Select all tasks">
-                            Select all tasks
+
                         </button>
                         <input class="main-action__entry-text" placeholder="Whats need to be done?" type="text"
                                aria-label="entry a new task" autofocus="autofocus">
@@ -21,41 +22,44 @@
                 </section>
                 <section class="main-content_main-section base-action">
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="HTML">
+                        <input class="input-task__checkbox" type="checkbox" aria-label="HTML" id="HTML-checkbox">
+                        <label class="input-task" for="HTML-checkbox">
                             <span class="input-task__text">HTML</span>
                         </label>
                         <button class="base-action__delete-task" aria-label="delete-task">
-                            delete task
+
                         </button>
                     </div>
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="CSS">
+                        <input class="input-task__checkbox" type="checkbox" aria-label="CSS" id="CSS-checkbox">
+                        <label class="input-task" for="CSS-checkbox">
                             <span class="input-task__text">CSS</span>
                         </label>
                         <button
                                 class="base-action__delete-task"
-                                aria-label="delete-task">delete task
+                                aria-label="delete-task">
                         </button>
                     </div>
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="JS">
+                        <input class="input-task__checkbox" type="checkbox" aria-label="JS" id="JS-checkbox">
+                        <label class="input-task" for="JS-checkbox">
                             <span class="input-task__text">JS</span>
                         </label>
                         <button class="base-action__delete-task" aria-label="delete-task">
-                            delete task
+
                         </button>
                     </div>
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="JS tools">
+                        <input class="input-task__checkbox" type="checkbox"
+                               aria-label="JS tools" id="JS-tools-checkbox">
+                        <label class="input-task" for="JS-tools-checkbox">
                             <span class="input-task__text">JS tools</span>
                         </label>
                         <button class="base-action__delete-task"
-                                aria-label="delete-task">delete task
+                                aria-label="delete-task">
                         </button>
+                    </div>
+                    <div class="base-action__tasks">
                     </div>
                 </section>
                 <section class="main-content__conclusion-bar options-bar">
