@@ -12,7 +12,7 @@ body {
 
 .main-content {
     background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .options-bar__items label{
@@ -77,12 +77,25 @@ input[type=text] {
 }
 
 input[type="checkbox"] {
+    display: none;
+}
+
+.input-task:before {
+    content: " ";
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: -1px 4px 0 0;
-    vertical-align: -2px;
-    background: #FFFFFF;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 32px;
+    height: 30px;
+    background-image: url(image/checkbox.png);
+    vertical-align: middle;
+}
+
+input:checked + .input-task:before {
+    width: 32px;
+    height: 30px;
+    background-image: url(image/checkbox_checked.png);
 }
 
 .base-action__tasks {
