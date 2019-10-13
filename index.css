@@ -1,5 +1,5 @@
 body {
-    background: bisque;
+    background: darkslategray;
 }
 
 .main-wrapper {
@@ -65,6 +65,7 @@ input[type=text] {
     font-weight: 300;
     font-size: 24px;
     line-height: 21px;
+    vertical-align: middle;
 }
 
 .main-content__entry-section, .base-action__tasks {
@@ -108,10 +109,6 @@ input:checked + .input-task:before {
 
 .base-action__tasks:hover {
     background: snow;
-}
-
-.input-task__text {
-    vertical-align: middle;
 }
 
 .base-action__delete-task {
