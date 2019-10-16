@@ -118,6 +118,7 @@ input:checked + .input-task:before {
 }
 
 input:checked + .input-task + .input-task__text {
+    color: #CCCCCC;
     text-decoration: line-through;
 }
 
@@ -181,7 +182,6 @@ input:checked + .input-task + .input-task__text {
 .options-bar__items__clear-completed {
     background: #FFF;
     border: none;
-
 }
 
 .options-bar__items .option-element__input {
