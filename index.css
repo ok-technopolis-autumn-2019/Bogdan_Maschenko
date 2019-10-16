@@ -117,6 +117,10 @@ input:checked + .input-task:before {
     background-color: transparent;
 }
 
+input:checked + .input-task + .input-task__text {
+    text-decoration: line-through;
+}
+
 .input-task__checkbox:focus + .input-task:before {
     border: solid royalblue 1px;
     border-radius: 50%;
