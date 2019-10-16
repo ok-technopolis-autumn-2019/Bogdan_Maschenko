@@ -102,22 +102,28 @@ input[type="checkbox"] {
     margin-right: 10px;
     margin-top: 2px;
     position: relative;
-    width: 42px;
+    width: 36px;
     height: 36px;
     background-image: url(image/checkbox.png);
     background-color: transparent;
+    background-repeat: no-repeat;
     vertical-align: middle;
 }
 
 input:checked + .input-task:before {
-    width: 42px;
+    width: 36px;
     height: 36px;
     background-image: url(image/checkbox_checked.png);
     background-color: transparent;
 }
 
+.input-task__checkbox:focus + .input-task:before {
+    border: solid royalblue 1px;
+    border-radius: 50%;
+}
+
 .input-task {
-    width: 90%;
+    width: auto;
     display: flex;
 }
 
@@ -130,7 +136,7 @@ input:checked + .input-task:before {
     background: snow;
 }
 
-.base-action__tasks:hover .base-action__delete-task {
+.base-action__tasks:hover .base-action__delete-task, .base-action__delete-task:focus {
     background-image: url(image/close.png);
     background-color: transparent;
     background-repeat: no-repeat;
@@ -148,7 +154,7 @@ input:checked + .input-task:before {
 
 .main-content__conclusion-bar {
     display: flex;
-    position: absolute;
+    justify-content: space-between;
     padding: 10px;
     height: 20px;
     width: 570px;
@@ -174,24 +180,21 @@ input:checked + .input-task:before {
 
 }
 
-.options-bar__items:nth-child(2) {
-    margin-left: 85px;
-}
-
-.options-bar__items input {
+.options-bar__items .option-element__input {
     position: absolute;
     left: -9999px;
 }
 
-input[type=radio]:checked + label {
+.option-element__input:focus:checked + .option-element {
+    border: solid royalblue 1px;
+}
+
+input[type=radio]:checked + .option-element {
     border: 1px solid #EBDFDF;
 }
 
 .option-element {
     padding-left: 5px;
     padding-right: 5px;
-}
-
-.options-bar__items .options-bar__items__clear-completed {
-    margin-left: 85px;
+    border: solid transparent 1px;
 }
