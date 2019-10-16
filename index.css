@@ -15,10 +15,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.options-bar__items label {
-    margin-left: 15px;
-}
-
 .tittle-todos {
     margin-left: 30%;
     width: 245px;
