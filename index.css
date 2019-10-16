@@ -105,6 +105,8 @@ input[type="checkbox"] {
     background-color: transparent;
     background-repeat: no-repeat;
     vertical-align: middle;
+    border: solid transparent 1px;
+    border-radius: 50%;
 }
 
 input:checked + .input-task:before {
@@ -112,6 +114,8 @@ input:checked + .input-task:before {
     height: 36px;
     background-image: url(image/checkbox_checked.png);
     background-color: transparent;
+    border: solid transparent 1px;
+    border-radius: 50%;
 }
 
 input:checked + .input-task + .input-task__text {
