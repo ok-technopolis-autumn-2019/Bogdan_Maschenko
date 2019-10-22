@@ -167,11 +167,14 @@ input:checked + .input-task + .input-task__text {
 }
 
 .main-content__conclusion-bar {
+    position: sticky;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     white-space: nowrap;
     background: #FFFFFF;
+    border-top: #E6E6E6 1px inset;
 }
 
 .options-bar__items,
