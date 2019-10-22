@@ -174,7 +174,6 @@ input:checked + .input-task + .input-task__text {
     padding: 10px;
     white-space: nowrap;
     background: #FFFFFF;
-    border-top: #E6E6E6 1px inset;
 }
 
 .options-bar__items,
@@ -183,7 +182,7 @@ input:checked + .input-task + .input-task__text {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.2;
     display: flex;
     align-items: center;
     color: #888888;
