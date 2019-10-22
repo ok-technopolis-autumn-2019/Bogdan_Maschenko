@@ -3,79 +3,72 @@
     <head>
         <meta charset="UTF-8">
         <title>Todos</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="main-wrapper">
             <header class="main-wrapper__header">
-                <h1 class="tittle-todos">Todos</h1>
+                <h1 class="tittle-todos">todos</h1>
             </header>
             <main class="main-content">
                 <section class="main-content__entry-section main-action">
                     <div class="main-action">
-                        <button class="main-action__select-all" aria-label="Select all tasks">
-                            Select all tasks
-                        </button>
+                        <button class="main-action__select-all" aria-label="Select all tasks"></button>
                         <input class="main-action__entry-text" placeholder="Whats need to be done?" type="text"
                                aria-label="entry a new task" autofocus="autofocus">
                     </div>
                 </section>
                 <section class="main-content_main-section base-action">
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="HTML">
-                            <span class="input-task__text">HTML</span>
+                        <input class="input-task__checkbox" type="checkbox" aria-label="HTML" id="HTML-checkbox">
+                        <label class="input-task" for="HTML-checkbox">
                         </label>
-                        <button class="base-action__delete-task" aria-label="delete-task">
-                            delete task
-                        </button>
+                        <span class="input-task__text">HTML</span>
+                        <button class="base-action__delete-task" aria-label="delete-task"></button>
                     </div>
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="CSS">
-                            <span class="input-task__text">CSS</span>
+                        <input class="input-task__checkbox" type="checkbox" aria-label="CSS" id="CSS-checkbox">
+                        <label class="input-task" for="CSS-checkbox">
                         </label>
-                        <button
-                                class="base-action__delete-task"
-                                aria-label="delete-task">delete task
-                        </button>
+                        <span class="input-task__text">CSS</span>
+                        <button class="base-action__delete-task" aria-label="delete-task"></button>
                     </div>
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="JS">
-                            <span class="input-task__text">JS</span>
+                        <input class="input-task__checkbox" type="checkbox" aria-label="JS" id="JS-checkbox">
+                        <label class="input-task" for="JS-checkbox">
                         </label>
-                        <button class="base-action__delete-task" aria-label="delete-task">
-                            delete task
-                        </button>
+                        <span class="input-task__text">JS</span>
+                        <button class="base-action__delete-task" aria-label="delete-task"></button>
                     </div>
                     <div class="base-action__tasks">
-                        <label class="input-task">
-                            <input class="input-task__checkbox" type="checkbox" aria-label="JS tools">
-                            <span class="input-task__text">JS tools</span>
+                        <input class="input-task__checkbox" type="checkbox"
+                               aria-label="JS tools" id="JS-tools-checkbox">
+                        <label class="input-task" for="JS-tools-checkbox">
                         </label>
-                        <button class="base-action__delete-task"
-                                aria-label="delete-task">delete task
-                        </button>
+                        <span class="input-task__text">JS tools</span>
+                        <button class="base-action__delete-task" aria-label="delete-task"></button>
                     </div>
+                    <div class="base-action__tasks"></div>
                 </section>
                 <section class="main-content__conclusion-bar options-bar">
                     <div class="options-bar__items">
                         <span class="items-counter" aria-label="3 items left">3 items left</span>
                     </div>
                     <div class="options-bar__items" role="group" aria-label="task options">
-                        <label class="option-element">
-                            <input class="option-element__input" type="radio" name="option"
-                                   value="All" aria-label="select all tasks">
+                        <input class="option-element__input" type="radio" name="option" checked="checked"
+                               value="All" aria-label="select all tasks" id="All-radio">
+                        <label class="option-element" for="All-radio">
                             <span class="option-element__text">All</span>
                         </label>
-                        <label class="option-element">
-                            <input class="option-element__input" type="radio" name="option"
-                                   value="Active" aria-label="Select active tasks">
+                        <input class="option-element__input" type="radio" name="option"
+                               value="Active" aria-label="Select active tasks" id="Active-radio">
+                        <label class="option-element" for="Active-radio">
                             <span class="option-element__text">Active</span>
                         </label>
-                        <label class="option-element">
-                            <input class="option-element__input" type="radio" name="option"
-                                   value="Completed" aria-label="Select completed tasks">
+                        <input class="option-element__input" type="radio" name="option"
+                               value="Completed" aria-label="Select completed tasks" id="Completed-radio">
+                        <label class="option-element" for="Completed-radio">
                             <span class="option-element__text">Completed</span>
                         </label>
                     </div>
