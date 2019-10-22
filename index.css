@@ -139,7 +139,7 @@ input:checked + .input-task + .input-task__text {
 }
 
 .input-task__checkbox:focus + .input-task:before {
-    border: solid royalblue 1px;
+    border: solid #4d90fe 1px;
     border-radius: 50%;
 }
 
@@ -200,7 +200,7 @@ input:checked + .input-task + .input-task__text {
 }
 
 .option-element__input:focus:checked + .option-element {
-    border: solid royalblue 1px;
+    border: solid #4d90fe 1px;
 }
 
 input[type=radio]:checked + .option-element {
