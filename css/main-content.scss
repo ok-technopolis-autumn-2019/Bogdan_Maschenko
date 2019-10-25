@@ -1,0 +1,21 @@
+@import "vars";
+@import "mixins";
+
+.main-content {
+    @include shadowAroundBoxes();
+    }
+
+.main-content__entry-section {
+    height: 50px;
+    @include todosFrameBackground();
+    }
+
+.main-content__conclusion-bar {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    white-space: nowrap;
+    background: $background_color;
+    }

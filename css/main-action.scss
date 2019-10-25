@@ -1,0 +1,25 @@
+@import "vars";
+@import "mixins";
+
+.main-action__select-all {
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    @include backgroundImage(url(/image/down_pointer.svg));
+    }
+
+.main-action__entry-text {
+    position: absolute;
+    font-family: $font_family_text;
+    height: 47px;
+    width: 88%;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: $font_size_text;
+    font-style: italic;
+    font-weight: $font_weight_text;
+    line-height: 15px;
+    color: $font_color_text;
+    border: 0;
+    }

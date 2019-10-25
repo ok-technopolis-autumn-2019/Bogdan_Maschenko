@@ -1,0 +1,51 @@
+@import "vars";
+@import "mixins";
+
+input {
+    &[type=checkbox] {
+        @include invisibleElement();
+        }
+
+    &:checked + .input-task {
+        &:before {
+            width: $checkbox_width_height;
+            height: $checkbox_width_height;
+            @include checkboxBorder($checkbox_checked_color);
+            @include backgroundImage(url(/image/checkbox_checked.svg));
+            }
+
+        & + .input-task__text {
+            color: $completed_task_text_color;
+            text-decoration: line-through;
+            }
+        }
+    }
+
+.input-task:before {
+    content: " ";
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 2px;
+    position: relative;
+    width: $checkbox_width_height;
+    height: $checkbox_width_height;
+    vertical-align: middle;
+    @include checkboxBorder($invisible-border-color);
+    @include backgroundImage(url(/image/checkbox.svg));
+    }
+
+.input-task__text {
+    font-family: $font_family_text;
+    font-style: $font_style_text;
+    font-weight: $font_weight_text;
+    font-size: $font_size_text;
+    line-height: 21px;
+    word-break: break-word;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+
+.input-task__checkbox:focus + .input-task:before {
+    @include checkboxBorder($border-focused-color);
+    }

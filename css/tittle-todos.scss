@@ -1,0 +1,13 @@
+@import "vars";
+
+.tittle-todos {
+    text-align: center;
+    font-family: $font_family_text;
+    font-size: $font_size_tittle;
+    font-style: $font_style_text;
+    font-weight: $font_weight_tittle;
+    color: $font_color_text;
+    word-break: break-word;
+    line-height: 100px;
+    margin-bottom: 0;
+    }

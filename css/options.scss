@@ -1,0 +1,37 @@
+@import "vars";
+@import "mixins";
+
+.options-bar__items__clear-completed,
+.options-bar__items {
+    font-family: $font_family_text;
+    font-style: $font_style_text;
+    font-weight: $font_weight_text;
+    font-size: $font_size_conclusion_bar;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    color: $font_color_conclusion_bar;
+
+    .option-element__input {
+        @include invisibleElement();
+        }
+    }
+
+.options-bar__items__clear-completed {
+    background: $background_color;
+    border: none;
+    }
+
+.option-element__input:focus:checked + .option-element {
+    border: solid $border-focused-color $border_width;
+    }
+
+.option-element {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid $invisible-border-color $border_width;
+    }
+
+input[type=radio]:checked + .option-element {
+    border: solid $radio_checked_color $border_width;
+    }
