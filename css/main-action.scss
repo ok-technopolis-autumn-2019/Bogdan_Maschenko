@@ -6,7 +6,7 @@
     height: 50px;
     text-align: center;
     border: none;
-    @include backgroundImage(url(/image/down_pointer.svg))
+    @include backgroundImage(url(/image/down_pointer.svg));
     }
 
 .main-action__entry-text {

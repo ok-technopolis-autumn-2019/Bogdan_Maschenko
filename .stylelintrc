@@ -5,7 +5,7 @@
     "unit-no-unknown": true,
     "property-no-unknown": true,
     "block-no-empty": true,
-    "max-nesting-depth": 1,
+    "max-nesting-depth": 2,
     "color-hex-case": "upper",
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
@@ -28,7 +28,6 @@
     "no-missing-end-of-source-newline": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
-    "at-rule-empty-line-before": "always",
     "unit-blacklist": ["em", "rem"],
     "unit-case": "lower"
  }
