@@ -1,0 +1,25 @@
+@import "vars";
+@import "mixins";
+
+.base-action__tasks {
+    display: flex;
+    min-height: 30px;
+    padding: 5px;
+    @include todosFrameBackground();
+
+    &:hover {
+        background: $background_hover_color;
+        }
+
+    .base-action__delete-task:focus,
+    &:hover .base-action__delete-task {
+        @include backgroundImage(url(/image/close.svg));
+        }
+    }
+
+.base-action__delete-task {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: $background_color;
+    }

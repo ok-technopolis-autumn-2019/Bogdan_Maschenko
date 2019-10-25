@@ -1,0 +1,20 @@
+@import "vars";
+@import "mixins";
+
+.main-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    min-width: 480px;
+    max-width: 580px;
+
+    &:before {
+        @include bottomLayer($usual_height_distance, $left_right_offset_layer, -1);
+        @include shadowAroundBoxes();
+        }
+
+    &:after {
+        @include bottomLayer($height_distance2x, $left_right_offset_layer2x, -2);
+        @include shadowAroundBoxes();
+        }
+    }

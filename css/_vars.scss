@@ -1,0 +1,58 @@
+/*colors*/
+$invisible: transparent;
+
+$white_1: #FFFFFF;
+
+$white_grey_1: #F5F5F5;
+$white_grey_2: #E6E6E6;
+$white_grey_3: #CCCCCC;
+
+$red_grey_1: #EBDFDF;
+
+$grey_1: #888888;
+
+$light_green_1: #5DC2AF;
+
+$light_blue_1: #4D90FE;
+
+/*base colors properties*/
+$background_color: $white_1;
+$background_color_app: $white_grey_1;
+
+/*hover properties*/
+$background_hover_color: snow;
+
+/*borders properties*/
+$border_width: 1px;
+$border-color: $white_grey_2;
+$invisible-border-color: $invisible;
+$border-focused-color: $light_blue_1;
+
+/*offset and height for extra layers*/
+$left_right_offset_layer: 2px;
+$left_right_offset_layer2x: $left_right_offset_layer * 2;
+$usual_height_distance: 6px;
+$height_distance2x: $usual_height_distance * 2;
+
+/*base properties for font*/
+$font_family_text: Roboto, sans-serif;
+$font_size_text: 24px;
+$font_weight_text: 300;
+$font_style_text: normal;
+$font_color_text: $white_grey_3;
+
+/*base properties for tittle*/
+$font_size_tittle: 100px;
+$font_weight_tittle: 100;
+
+/*conclusion bar properties*/
+$font_size_conclusion_bar: 14px;
+$font_color_conclusion_bar: $grey_1;
+$radio_checked_color: $red_grey_1;
+
+/*variables for checkbox*/
+$invisible_range: -99999px;
+$completed_task_text_color: $white_grey_3;
+$checkbox_width_height: 36px;
+$checkbox_checked_color: $light_green_1;
+
